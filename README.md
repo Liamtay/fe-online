@@ -35,11 +35,10 @@
 {
   "userId": 111323290434354540545
 }
-
+```
 A:
 const jsonString = '{"userId": 111323290434354540545}';  
 const obj = JSON.parse(jsonString); 
-```
 ### 前端需要*稳定*每隔`1s`向服务端请求`API`, 请问如何实现？
 A:在前端实现每隔1秒向服务端请求API的功能，你可以使用JavaScript的setInterval方法。需要注意的是，如果服务端响应较慢，或者网络状况不佳，可能会导致请求堆积，进而引发性能问题。在实际开发中，你可能需要考虑一些额外的逻辑来处理这种情况，比如使用防抖（debounce）或节流（throttle）技术来限制请求的频率，或者在每次新的请求发起之前取消前一次的请求等。
 
@@ -55,3 +54,7 @@ A:在以下情况下，我会考虑为项目引入状态管理库，如Redux、P
 
 A:ESM（ECMAScript Modules）和CJS（CommonJS）不能兼容的原因主要源于它们之间的设计和实现方式的本质差异。
 首先，ESM是JavaScript语言标准的模块系统，通过import和export语句进行。CJS是Node.js早期采用的模块系统，通过require和module.exports语句进行。这两种模块系统在语法和行为上有着显著的不同，导致它们很难在同一个环境中完全兼容。
+
+### 完成页面截图
+
+![](./docs/完成页面截图.jpg)

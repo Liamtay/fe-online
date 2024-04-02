@@ -1,11 +1,7 @@
 import { createApp } from "vue";
-import { createRouter, createWebHashHistory } from "vue-router";
 import Antd from "ant-design-vue";
 import App from "./App.vue";
 import "ant-design-vue/dist/reset.css";
-
-import orgApi from './api/org'
-import userApi from './api/user'
 import './style.css'
 
 // document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
