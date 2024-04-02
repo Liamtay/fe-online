@@ -10,7 +10,7 @@ const getOrgData = (): Org[] => {
     .map(() => {
       return {
         id: Math.random() + '',
-        name: (Math.random() + 1).toString(36).substring(7),
+        name: (Math.random() + 1).toString(36).substring(7) + '部门',
       }
     })
 }
